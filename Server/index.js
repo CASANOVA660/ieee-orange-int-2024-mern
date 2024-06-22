@@ -3,14 +3,6 @@ const app = express();
 const port = 5000;
 const cors = require('cors');
 
-app.use(cors(
-  {
-      origin: ["https://notebox-one.vercel.app"],
-      methods: ["POST", "GET"],
-      credentials: true
-  }
-));
-
 // Available routes
 app.use(express.json());
 
@@ -22,7 +14,7 @@ app.use("/api/notes", require("./routes/notes"));
 
 // Start the server
 const server = app.listen(port, () => {
-  console.log(`Notebox-backend listening on port ${port}`);
+  console.log(`ieeeproject-backend listening on port ${port}`);
 });
 
 //shutdown
